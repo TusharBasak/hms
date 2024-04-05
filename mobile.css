@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+   
+    border: none;
+    outline: none;
+    
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+   
+    a{
+        color:white;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+   
+    p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    
+    /* for mobile and desktop and for any column */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile it take full width though we give column size*/
+[class*="col-"]{
+    width: 100%;
+}
+
+/* navbar design starts here */
+.navbar{
+    display: flex;
+    background-color: #2f969e;
+    padding: 1% 6%;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+ 
+}
+
+.navbar img{
+    width: 30%;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+  .navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 15px;
+    margin: 7px 0px;
+    padding: 6px;
+  }
+
+  .navbar-menu a:hover{
+    background-color: gray;
+    color:black;
+  }
+
+  .navbar img{
+    height: 90px;
+  } 
+ 
+
+
+
+
+/* solve clearfix problem pseudo element */
+.navbar::after{ 
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navbar design ends here */
+
+/* body part starts here */
+.container{
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .card p{
+     text-align: center;
+  }
+  
+  .card a {
+    text-decoration: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  
+  .card a:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+.container .card img{
+    width: 100%;
+}
+
+.reg{
+    display: flex;
+    flex-direction: row;
+}
+
+/* body part ends here */
+
+/* footer starts here */
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.btn:hover{
+    background-color: gray;
+   
+}
+.copyright{
+    text-align: center;
+}
+
+/* clearfix problem to solve overflow */
+#footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+
+/* footer ends here */

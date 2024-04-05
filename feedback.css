@@ -1,0 +1,21 @@
+.textareaid{
+    width: 550px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 7px solid red;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  }
+
+
+.textareaid:focus{
+  background-color: lightblue;
+border: 7px solid #555;
+}
+
+.text{
+    color: red;
+}
