@@ -1,0 +1,37 @@
+input[type=number] {
+    width: 100%;
+    padding: 6px 8px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 15px;
+  }
+
+  input[type=number]:focus{
+    background-color: lightblue;
+    border: 3px solid #555;
+
+  }
+
+ 
+
+  .text{
+    font-size: larger;
+    color: red;
+  }
+
+  .select{
+    width: 100%;
+    padding: 6px 8px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 15px;
+    /* background-color: lightblue;
+    border: 3px solid #555; */
+  }
+
+  select:focus{
+  background-color: lightblue;
+    border: 3px solid #555; 
+  }

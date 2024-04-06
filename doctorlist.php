@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>View Queries</title>
+  <title>View Doctor List</title>
   <link rel="stylesheet" href="table.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
  
 
   <div class="container">
-  <form action="queryverify.php"  method="post" >
+  <form action="doctorlistfind.php"  method="post" >
  
   <input type="email" name="email" placeholder="Enter Email" class="search" required>
-    <a href="queryverify.php"><input type="submit"  name="dbsearch"  value="Search" ></a>
+    <a href="doctorlistfind.php"><input type="submit"  name="dbsearch"  value="Search" ></a>
     
  
 </form>
@@ -29,15 +29,15 @@
                     echo "<h3>".$_GET['message1']."</h3>";
                 }
                ?>
-  <h2 style="color: red;"> View Queries </h2>
+  <h2 style="color: red;"> View Doctor List </h2>
   <table style="width:80%">
   <thed>
   <tr>
   <th >ID</th>
-    <th>Name</th>
+    <th>UserName</th>
     <th>Email</th>
-    <th>Contact</th>
-    <th>Messages</th>
+    <th>Specialist</th>
+    <th>Doctor's Fee</th>
   </tr>
 </thead>
   <tbody>
@@ -46,18 +46,18 @@
 
                      include 'dbcon.php';
 
-                    $query = "select * from `feedback`;";
+                    $query = "select * from `doctb`;";
                     $result = mysqli_query($connections,$query);
                     while ($row = mysqli_fetch_assoc($result)){
               
                      
                    ?>
                       <tr>
-                      <td><?php echo $row['id'];?></td>
-                        <td><?php echo $row['name'];?></td>
+                      <td><?php echo $row['doctid'];?></td>
+                        <td><?php echo $row['username'];?></td>
                         <td><?php echo $row['email'];?></td>
-                        <td><?php echo $row['contact'];?></td>
-                        <td><?php echo $row['message'];?></td>
+                        <td><?php echo $row['spec'];?></td>
+                        <td><?php echo $row['docfee'];?></td>
                       </tr>
                      <?php } ?> 
                 

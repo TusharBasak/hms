@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>View Queries</title>
+  <title>View Patient List</title>
   <link rel="stylesheet" href="table.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
  
 
   <div class="container">
-  <form action="queryverify.php"  method="post" >
+  <form action="patientlistfind.php"  method="post" >
  
   <input type="email" name="email" placeholder="Enter Email" class="search" required>
-    <a href="queryverify.php"><input type="submit"  name="dbsearch"  value="Search" ></a>
+    <a href="patientlistfind.php"><input type="submit"  name="dbsearch"  value="Search" ></a>
     
  
 </form>
@@ -29,15 +29,16 @@
                     echo "<h3>".$_GET['message1']."</h3>";
                 }
                ?>
-  <h2 style="color: red;"> View Queries </h2>
+  <h2 style="color: red;"> View patient List </h2>
   <table style="width:80%">
   <thed>
   <tr>
-  <th >ID</th>
-    <th>Name</th>
+  <th>patient ID</th>
+  <th >First Name</th>
+    <th>last Name</th>
+    <th>Gender</th>
     <th>Email</th>
     <th>Contact</th>
-    <th>Messages</th>
   </tr>
 </thead>
   <tbody>
@@ -46,18 +47,20 @@
 
                      include 'dbcon.php';
 
-                    $query = "select * from `feedback`;";
+                    $query = "select * from `patreg`;";
                     $result = mysqli_query($connections,$query);
                     while ($row = mysqli_fetch_assoc($result)){
               
                      
                    ?>
                       <tr>
-                      <td><?php echo $row['id'];?></td>
-                        <td><?php echo $row['name'];?></td>
+                      <td><?php echo $row['pid'];?></td>
+                        <td><?php echo $row['fname'];?></td>
+                        <td><?php echo $row['lname'];?></td>
+                        <td><?php echo $row['gender'];?></td>
                         <td><?php echo $row['email'];?></td>
                         <td><?php echo $row['contact'];?></td>
-                        <td><?php echo $row['message'];?></td>
+                      
                       </tr>
                      <?php } ?> 
                 
