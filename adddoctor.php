@@ -19,22 +19,23 @@
                
                 <input type="text" name="name" placeholder="Enter Doctor name" required> <br><br>
                  
-                <label for="spec" class="text">Specialization:</label>  
+                <!-- <label for="spec" class="text">Specialization:</label>   -->
                      
                        <select name="specalization" id="spec" class="select" >
+                       <option value="specalization">Select  Specialization</option>
                         <option value="meadicine">Meadicine</option>
                         <option value="cardiologist">Cardiologist</option>
                         <option value="sergeon">Sergeon</option>
-                         <option value="dermatology">Dermatology</option>
-                         <option value="Orthopedics">Orthopedics</option>
-                         <option value="Orthopedics">Neurology</option>
-                         <option value="Orthopedics">Cardiologist</option>
+                         <option value="dermatology"> Dermatology</option>
+                        
 
                         </select>
                         <br>
                         <br>
                  <input type="email" name="email" placeholder="Enter Doctor  Email"required> <br><br>
                 <input type="password" name="password" placeholder="Enter password more than 6 charecters"  required> <br><br>
+            
+
                 <input type="number" name="docfee" placeholder="Enter Consultancy fee"  required> <br><br>
               <a href="insertdoctor.php"> <input type="submit" name="add_doctor" value="Add Doctor"></input></a>
                  <input type="reset" value="Reset"></input> 

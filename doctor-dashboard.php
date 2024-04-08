@@ -26,8 +26,9 @@
       </div> -->
       
       <div class="navbar-menu col-12" >
-         <a href=""> Appoinments Details</a>
-         <a href="">prescriptions List</a>
+         <a href="doctorappoinmentdetails.php"> Appoinments Details</a>
+         <a href="">Give prescriptions </a>
+         <a href="doctorcancelappoinment.php">cancel appoinment </a>
          <a href="index.html">Log Out </a>
       </div>
       </div>

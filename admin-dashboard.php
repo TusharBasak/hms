@@ -26,12 +26,11 @@
       </div> -->
       
       <div class="navbar-menu col-12" >
-         <a href="doctorlist.php"> Doctor List</a>
-         <a href="patientlist.php">patient List</a>
-         <a href=""> Appoinment details</a>
-         <a href="">Prescription List</a>
+         <a href="doctorlist.php"> Doctor Lists</a>
+         <a href="patientlist.php">patient Lists</a>
+         <a href="appoinmentdetails.php"> View Appoinment details</a>
          <a href="adddoctor.php">Add Doctor</a>
-         <a href=""> Delete Doctor</a>
+         <a href="deletedoctor.php"> Delete Doctor</a>
          <a href="queries.php">Queries</a>
          <a href="index.html">Log Out </a>
       </div>

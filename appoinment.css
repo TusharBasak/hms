@@ -1,0 +1,44 @@
+input[type=date] {
+    width: 100%;
+    padding: 6px 8px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 15px;
+  }
+
+  input[type=date]:focus{
+    background-color: lightblue;
+    border: 3px solid #555;
+
+  }
+
+  .specalization{
+    background-color: #1bb17a;
+    border: none;
+    color: white;
+    padding: 2px 12px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 150px;
+    display: block;
+    text-align: center;
+  }
+
+  .textarea{
+    display: block;
+      width: 500px;
+      padding: 6px 8px;
+      margin: 2px 0;
+      box-sizing: border-box;
+      border: 2px solid red;
+      border-radius: 15px;
+ 
+    
+  }
+
+  .fee{
+    font-weight: bolder;
+  }

@@ -17,9 +17,10 @@
         <h3 >Hospital Management System</h3>
      
       <div class="navbar-menu col-12" >
-         <a href="">Book Appoinment</a>
-         <a href="">Appoinment History</a>
-         <a href="">Prescriptions </a>
+         <!-- <a href="personaldetails.php">Personal Details</a> -->
+         <a href="selectspecalist.php">Book Appoinment</a>
+         <a href="patientappoinmentstatus.php">Appoinment Status</a>
+         <a href="">View Prescriptions </a>
          <a href="index.html">Log Out </a>
       </div>
       </div>
